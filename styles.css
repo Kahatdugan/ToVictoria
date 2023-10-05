@@ -1,0 +1,78 @@
+/* variables */
+:root{
+    --primary:#1c1626;
+    --secondary: #fefffb;
+    --tertiary: #ff2961;
+}
+
+/* reset */
+body,p,a,{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* base styles */
+body{
+    background: var(--primary);
+}
+
+.photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.photo2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 20px;
+    border: solid;
+    border-color: var(--tertiary);
+    border-width: 2px;
+
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lora-Regular';
+    src: url(assets/fonts/Lora-Regular.ttf);
+}
+h1,h2,h3,p{
+    color: var(--secondary);
+}
+h1{
+    font-size: 1.2em;
+    font-family: 'Lora-Regular';
+    font-weight: lighter;
+    text-align: justify;
+}
+h2{
+    font-size: 1.2em;
+    font-family: 'Lora-Regular';
+    font-weight: lighter;
+    text-align: right;
+}
+h3{
+    font-size: 1.2em;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+    text-align: justify;
+}
+
+.leading{
+    padding-top: 50px;
+    font-size: 1.8em;
+    font-family: 'Montserrat-Regular';
+    font-weight: bold;
+}
+
